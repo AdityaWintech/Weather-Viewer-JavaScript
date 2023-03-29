@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 171, 140);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image:url('./assests/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    position: absolute;
+    
+}
+.weather{
+    display: flex;
+    z-index: 2;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.166);
+    padding: 10px 20px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.491);
+    border-top: 2px solid rgba(255, 255, 255, 0.641);
+    border-left: 2px solid rgba(255, 255, 255, 0.641);
+}
+.weather1{
+    font-size: 3.5rem;
+
+}
+.weather p{
+    font-size:2rem;
+}
+.weather span{
+    font-size:0.75rem;
+}
+nav{
+    height:100px;
+    width: 100%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.181);
+    position: absolute;
+    bottom: 0%;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+nav form .inputField{
+    padding: 12px 40px;
+    outline: none;
+    border: 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.782);
+    background-color:rgba(255, 255, 255, 0.439);
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.375);
+    font-size: 19px;
+
+}
+nav form button{
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.644);
+    font-size: 19px;
+    font-weight: 500;
+    border-top: 2px solid rgba(255, 255, 255, 0.744);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.375);
+}
+.weather3 img{
+    width: 1.7rem;
+}
+.weather >div{
+    margin: 0.625rem;
+}
+h3{
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    font-size: 24px;
+    color: white;
+}
